@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"/Users/milovma1/projects/UnrealCource/CheckersAR/.vscode": true,
+		"/Users/milovma1/projects/UnrealCource/CheckersAR/CheckersAR.xcworkspace": true,
+		"/Users/milovma1/projects/UnrealCource/CheckersAR/Content": true,
+		"/Users/milovma1/projects/UnrealCource/CheckersAR/Intermediate": true,
+		"/Users/milovma1/projects/UnrealCource/CheckersAR/Saved": true
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "CheckersAREditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "CheckersAREditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.20/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/milovma1/projects/UnrealCource/CheckersAR/CheckersAR.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.20",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/Shared/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/milovma1/projects/UnrealCource/CheckersAR/CheckersAR.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/Shared/Epic Games/UE_4.20"
+		}
+	]
+}

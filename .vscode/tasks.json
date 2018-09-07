@@ -1,0 +1,60 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "CheckersAREditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CheckersAREditor",
+				"Mac",
+				"Development",
+				"/Users/milovma1/projects/UnrealCource/CheckersAR/CheckersAR.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+			}
+		},
+		{
+			"label": "CheckersAREditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CheckersAREditor",
+				"Mac",
+				"Development",
+				"/Users/milovma1/projects/UnrealCource/CheckersAR/CheckersAR.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CheckersAREditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+			}
+		},
+		{
+			"label": "CheckersAREditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CheckersAREditor",
+				"Mac",
+				"Development",
+				"/Users/milovma1/projects/UnrealCource/CheckersAR/CheckersAR.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+			}
+		}
+	]
+}
